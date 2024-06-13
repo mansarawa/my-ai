@@ -21,7 +21,7 @@ const QuestionForm = () => {
     e.preventDefault();
     setLoading(true)
     try {
-      const res = await fetch(`http://localhost:3000/ask`, {
+      const res = await fetch(`https://my-ai-1.onrender.com/ask`, {
         method: 'post',
         headers: {
           'Content-Type': "application/json",

@@ -12,7 +12,7 @@ function Sidemenu(props) {
   const { data, setData } = useContext(userPrompt);
 
   const fetchPrompt = async () => {
-    const res = await fetch('http://localhost:3000/fetch-prompts', {
+    const res = await fetch('https://my-ai-1.onrender.com/fetch-prompts', {
       method: 'post',
       headers: {
         'Content-Type': 'application/json',

@@ -12,7 +12,7 @@ function Login() {
     e.preventDefault();
    
     try {   
-    const res=await fetch('http://localhost:3000/login',{
+    const res=await fetch('https://my-ai-1.onrender.com/login',{
       method:'post',
       headers:{
         'Content-Type':'application/json'
