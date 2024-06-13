@@ -10,7 +10,7 @@ export default function GetStarte() {
       </div>
       <div style={{width:'50%'}}>
         <h1>Wel Come </h1><h2>in our Chat Bot</h2>
-        {!user?<Link to='/login' className="btn btn-primary" style={{textAlign:'center',backgroundColor:'black',border:'none'}}>Login</Link>:<Link to='/login' className="btn btn-primary" style={{textAlign:'center',backgroundColor:'black',border:'none'}}>Go To Dashboard</Link>}
+        {!user?<Link to='/login' className="btn btn-primary" style={{textAlign:'center',backgroundColor:'black',border:'none'}}>Login</Link>:<Link to='/dashboard' className="btn btn-primary" style={{textAlign:'center',backgroundColor:'black',border:'none'}}>Go To Dashboard</Link>}
         </div>
     </div>
   )
