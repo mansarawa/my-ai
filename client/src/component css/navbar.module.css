@@ -1,0 +1,24 @@
+.container{
+    width: 100%;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.name{
+    padding-left:2%;
+    width: 40%;
+    color:white;
+}
+.hmenu{
+    width: 60%;
+    font-size: 20px;
+    
+}
+.menu{
+    margin-right: 2%;
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+}

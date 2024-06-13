@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    padding: 2%;
+    height: 100vh;
+    padding-top: 3%;
+    left:0px;
+   
+    top: 0px;
+    position: fixed;
+    
+    color: black;
+   overflow-y: scroll;
+}
+.menu{
+   
+    margin-top: 2%;
+    
+}
+.btn{
+    border: none;
+    background-color: white;
+    color: black;
+}
