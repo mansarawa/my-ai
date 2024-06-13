@@ -25,7 +25,7 @@ function Signup() {
     const result=await res.json();
     if(result.success)
       {
-        navigate('/dashboard')
+        navigate('/login')
         toast.success("success")
       }
 
