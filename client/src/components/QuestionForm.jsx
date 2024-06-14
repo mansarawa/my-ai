@@ -17,6 +17,7 @@ const QuestionForm = () => {
   const {data,setData}=useContext(userPrompt)
   const [bool, setBool] = useState(false)
   const [loading, setLoading] = useState()
+  const username=user.username
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true)
@@ -76,6 +77,11 @@ const QuestionForm = () => {
     <div className={Que.container}>
       
       <div className={Que.full}>
+        {!answer && !loading && <div className='container' style={{marginTop:'15%',marginLeft:'25%',width:'60%'}}>
+          <h1 style={{background:'linear-gradient(to  left, #5082ed , #d46677)',WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',}}>Hello,{username.charAt(0).toUpperCase() + username.slice(1)}</h1>
+          <h2 style={{color:'#c4c7c5'}}>How can I help you today?</h2>
+          </div>}
         {answer&&<div className={Que.question}>
             <span>{question}</span>
         </div>}
