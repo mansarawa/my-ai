@@ -5,20 +5,24 @@
     align-items: center;
     justify-content: center;
     background-color: white;
+    text-align: center;
 }
-.name{
-    padding-left:2%;
-    width: 40%;
-    color:white;
-}
+
 .hmenu{
-    width: 60%;
+    /* width: 60%; */
     font-size: 20px;
     
 }
 .menu{
-    margin-right: 2%;
+    margin-right: 4%;
+    margin-top: 1%;
     color: black;
     list-style-type: none;
     text-decoration: none;
+}
+@media screen and (max-width:450px) {
+    /* .hmenu{
+        display: none;
+    } */
+
 }

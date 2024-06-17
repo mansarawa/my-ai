@@ -9,6 +9,7 @@ import login from './routes/login.js';
 
 import signup from './routes/signup.js';
 import fetch from './routes/fetch.js';
+
 dotenv.config();
 
 const app = express();
@@ -18,6 +19,7 @@ app.use(express.json());
 app.use('/',router)
 app.use('/',login)
 app.use('/',signup)
+
 app.use('/',fetch)
 app.listen(3000, () => {
   console.log("Server is running on port ");

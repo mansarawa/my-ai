@@ -34,7 +34,7 @@ function Login() {
       }
       else
       {
-        console.log("faild")
+       toast.error("Not registerd")
       }
     } catch (error) {
       console.log(error)

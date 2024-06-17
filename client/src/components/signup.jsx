@@ -8,7 +8,6 @@ function Signup() {
   const [password, setPassword] = useState()
   const navigate=useNavigate();
   const handlesubmit=async(e)=>{
-
     e.preventDefault();
     try {
     const res=await fetch('https://my-ai-1.onrender.com/signup',{
@@ -26,12 +25,14 @@ function Signup() {
     if(result.success)
       {
         navigate('/login')
+        console.log("success")
         toast.success("success")
       }
 
       else
       {
-        console.log("faild")
+        toast.error("Already Signed Up")
+        console.log("erro")
       }
     } catch (error) {
       console.log(error)
