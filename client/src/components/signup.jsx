@@ -10,7 +10,7 @@ function Signup() {
   const handlesubmit=async(e)=>{
     e.preventDefault();
     try {
-    const res=await fetch('http://localhost:3000/signup',{
+    const res=await fetch('https://my-ai-2.onrender.com/signup',{
       method:'post',
       headers:{
         'Content-Type':'application/json'
