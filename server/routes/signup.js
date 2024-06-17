@@ -1,7 +1,7 @@
 import express from 'express'
 import User from '../model/user.js';
 import verify  from '../middleware/verify.js';
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
 const signup=express.Router();
 
 signup.post('/signup',async(req,res)=>{
