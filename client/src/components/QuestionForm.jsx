@@ -24,7 +24,7 @@ const QuestionForm = () => {
     e.preventDefault();
     setLoading(true)
     try {
-      const res = await fetch(`https://my-ai-1.onrender.com/ask`, {
+      const res = await fetch(`http://localhost:3000/ask`, {
         method: 'post',
         headers: {
           'Content-Type': "application/json",
@@ -76,7 +76,7 @@ const QuestionForm = () => {
   const [click,setClick]=useState(false)
 
   const fetchPrompt = async () => {
-    const res = await fetch('https://my-ai-1.onrender.com/fetch-prompts', {
+    const res = await fetch('http://localhost:3000/fetch-prompts', {
       method: 'post',
       headers: {
         'Content-Type': 'application/json',
