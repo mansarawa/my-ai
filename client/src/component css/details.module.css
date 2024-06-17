@@ -43,4 +43,79 @@
     border-radius: 5px;
    
   }
+  /*side */
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  
+  }
+  .menu{
+   width: 100%;
+    margin: 2%;
+    
+  }
+  .btn{
+    border: none;
+    width: 100%;
+    background-color: white;
+    color: black;
+  }
+  .hamburger{
+    display: none;
+    /* width: 100%; */
+  }
+  .fullside{
+    display: flex;
+    height: 100vh;
+    left:0px;
+    top: 0px;
+    position: fixed;
+    color: black;
+   overflow-y: scroll;
+    flex-direction: column;
+    width: 20vw;
+  }
+  .hdiv{
+    margin-top:15%;
+    margin-left:25%;
+    width:60%;
+  }
+  @media screen and (max-width:450px) {
+    .hamburger{
+        display: block;
+        width: 100%;
+        margin-top: 30%;
+    }
+    /* .hdiv{
+      width: 100%;
+    } */
+    .details{
+     
+      display: none;
+    }
+    .full{
+      border: none;
+    }
+    .container{
+            display: none;
+    }
+   .dclick{
+    display: none;
+   }
+    .click{
+        width: 100vw;
+       
+        min-height: 100vh;
+      }
+     
+      .question{
+        width: 90%;
+        
+      }
+      .answer{
+        width: 90%;
+        
+      }
+  }
   

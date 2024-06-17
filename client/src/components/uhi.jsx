@@ -2,9 +2,8 @@ import React from 'react';
 import { marked } from 'marked';
 import DOMPurify from 'dompurify';
 
-export default function uhi() {
-  const mdText = `
-  # Sample Markdown
+export default function Uhi() {
+  const mdText = `  # Sample Markdown
 
   This is a **bold** text and this is *italic* text.
 
@@ -19,6 +18,6 @@ export default function uhi() {
   const cleanHtml = DOMPurify.sanitize(html);
 
   return (
-    <div dangerouslySetInnerHTML={{ __html: cleanHtml }}>{html}</div>
+    <div dangerouslySetInnerHTML={{ __html: cleanHtml }}></div>
   );
 }

@@ -27,6 +27,8 @@
     position: fixed;
     color: black;
    overflow-y: scroll;
+   text-align: center;
+   overflow-x: hidden;
     flex-direction: column;
     width: 20vw;
 }

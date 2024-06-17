@@ -15,7 +15,8 @@ import Details from './components/Details';
 import GetStarte from './components/GetStarte';
 import About from './components/About';
 import Contact from './components/Contact';
-import uhi from './components/uhi';
+import uhi from './components/Uhi';
+import Uhi from './components/Uhi';
 function App() {
   return (
    <BrowserRouter>
@@ -26,7 +27,7 @@ function App() {
       <Route path='/login' element={<Login/>}/>
       <Route path='/register' element={<Signup/>}/>
       <Route path='/dashboard' element={<QuestionForm/>}/>
-      <Route path='/uhi' element={<uhi/>}/>
+      <Route path='/uhi' element={<Uhi/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/contact' element={<Contact/>}/>
       {/* <Route path='/dashboard' element={<Sidemenu/>}/> */}
