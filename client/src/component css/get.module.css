@@ -1,0 +1,24 @@
+.acontainer{
+    display:flex;
+    align-items:center;justify-content:center;
+    flex-direction:row-reverse;
+    padding-top:5%
+}
+.items{
+    text-align: center;
+    width: 50%;
+}
+@media screen and (max-width:1024px) {
+    .acontainer{
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+    }
+    .items
+    {
+        margin-top: 5%;
+        margin-bottom: 25%;
+        height: 50%;
+        width: 80%;
+    }
+}

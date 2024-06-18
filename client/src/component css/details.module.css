@@ -14,7 +14,12 @@
     /* margin-right: 10vw; */
     width: 70vw;
     display: flex;
+    padding-top: 20%;
     flex-direction: column;
+}
+.ques{
+  display: flex;
+  margin-top: 20%;
 }
 .question{
     /* background-color: black; */
@@ -25,7 +30,7 @@
     background-color: white;
     color: black;
     margin-left: 50vw;
-    right: 0px;
+   
     margin-bottom: 2%;
     padding: 2%;
 }
@@ -53,7 +58,7 @@
   .menu{
    width: 100%;
     margin: 2%;
-    
+    height: 100%;
   }
   .btn{
     border: none;
@@ -81,6 +86,9 @@
     margin-left:25%;
     width:60%;
   }
+  @media screen and (max-width:1024px) {
+
+  }
   @media screen and (max-width:450px) {
     .hamburger{
         display: block;
@@ -101,8 +109,8 @@
             display: none;
     }
    .dclick{
-    display: none;
-   }
+    padding-top: 10%;  
+  }
     .click{
         width: 100vw;
        
@@ -110,10 +118,18 @@
       }
      
       .question{
-        width: 90%;
-        
+        margin-top:5%;
+        width: 100%;
+       
+        text-align: end;
+        /* align-items: flex-end; */
+        /* margin-left: 30%;
+        text-align: end; */
+        border: none;
       }
       .answer{
+        margin-right: 10%;
+        border: none;
         width: 90%;
         
       }

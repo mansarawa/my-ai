@@ -104,7 +104,8 @@ const QuestionForm = () => {
   };
 
   let cleanHtml = '';
-  if (answer) {
+  const checkanswer=typeof answer ==='string'
+  if (checkanswer) {
     const html = marked(answer);
     cleanHtml = DOMPurify.sanitize(html);
   }

@@ -34,7 +34,7 @@ function Details() {
             {info.map((item, key) => (
               <div key={key} className={Det.menu}>
                 <button onClick={() => handleBtn(item)} className={Det.btn}>
-                  {item.Detstion}
+                  {item.question}
                 </button>
               </div>
             ))}
@@ -42,9 +42,10 @@ function Details() {
         
       </div>
       </div>
-      <div className={click ? Det.dclick :Det.details}>
+      <div className={click ? Det.details:Det.dclick}>
+        <div className={Det.ques}>
         <span className={Det.question}>{data.question}</span>
-        <span style={{ color: "white" }}> My Ai:-</span><br />
+        <span style={{ color: "white" }}> My Ai:-</span><br /></div>
         <span className={Det.answer} dangerouslySetInnerHTML={{ __html: cleanHtml }}></span>
       </div>
     </div>
