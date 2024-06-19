@@ -1,0 +1,16 @@
+.form{
+    margin:10% 0 0 30%;
+    padding:5%;
+    border-radius:10px;
+    border:1px solid black;width:40%
+}
+.container{
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width:450px) {
+    .form{
+        margin: 50% 0% 10% 10%;
+        width: 80%;
+    }
+}

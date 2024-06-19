@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Mix from '../component css/loginsignup.module.css'
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
@@ -39,8 +40,8 @@ function Signup() {
     }
   }
   return (
-    <div className='container'>
-      <form onSubmit={handlesubmit} style={{margin:'8% 0 0 30%',padding:'5%',borderRadius:'10px',border:'1px solid black',width:'40%'}}>
+    <div className={Mix.container}>
+      <form onSubmit={handlesubmit} className={Mix.form}>
         <div className="mb-3">
       <label htmlFor="exampleInputEmail1" className="form-label">
         Username
