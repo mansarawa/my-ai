@@ -130,7 +130,7 @@ const QuestionForm = () => {
       </div>
       <div className={click ? Que.cqcontainer : Que.qcontainer}>
         <div className={Que.full}>
-          {!answer && !loading && (
+          {!answer && !loading &&  (
             <div className={Que.hdiv}>
               <h1 style={{
                 background: 'linear-gradient(to left, #5082ed, #d46677)',
@@ -142,7 +142,7 @@ const QuestionForm = () => {
               <h2 style={{ color: '#c4c7c5' }}>How can I help you today?</h2>
             </div>
           )}
-          {answer && (
+          {answer && !loading && question && (
             <div className={Que.question}>
               <span>{question}</span>
             </div>
@@ -160,7 +160,7 @@ const QuestionForm = () => {
               />
             </div>
           ) : (
-            answer && (
+            answer && question &&  (
               <div className={Que.answer}>
                 <div>
                   <h3>{answer ? "Answer:" : ""}</h3>
