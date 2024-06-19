@@ -31,7 +31,7 @@ function Login() {
         console.log(result.token)
         localStorage.setItem('token',JSON.stringify(result.token))
         localStorage.setItem('user',JSON.stringify(result.user))
-        navigate('/dashboard')
+        navigate('/')
         toast.success("success")
        setData('')
       }
