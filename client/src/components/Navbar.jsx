@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Nav from '../component css/navbar.module.css'
 import { Link, useNavigate } from 'react-router-dom'
+import  { userPrompt } from '../context/Userchoice';
 function Navbar() {
+  const {data,setData}=useContext(userPrompt)
   const navigate=useNavigate();
   const user=JSON.parse(localStorage.getItem('user'))
   const handlelogout=()=>{
     localStorage.clear();
     navigate('/login')
+  }
+  const handeldashbord=()=>{
+    setData('')
   }
   return (
     <div className={Nav.container}>
@@ -18,7 +23,7 @@ function Navbar() {
           <Link to='/about' className={Nav.menu}>About</Link>
           <Link to='/contact' className={Nav.menu}>Contact</Link>
           {user?<Link to='/login' onClick={handlelogout} className={Nav.menu}>Logout</Link>:<Link to='/login' className={Nav.menu}>Login</Link>}
-          {user?<Link to='/dashboard' className={Nav.menu}>Dashboard</Link>:<Link to='/register' className={Nav.menu}>Register</Link>}
+          {user?<Link to='/dashboard'onClick={handeldashbord} className={Nav.menu}>Dashboard</Link>:<Link to='/register' className={Nav.menu}>Register</Link>}
       </div>
       {/* {menu ?<div className={Nav.lmenu}>
           <Link to='/' className={Nav.menus}>Home</Link>

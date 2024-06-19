@@ -1,13 +1,15 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Mix from '../component css/loginsignup.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
+
+import { userPrompt } from '../context/Userchoice';
 function Login() {
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
-  
+  const {data,setData}=useContext(userPrompt)
   const navigate=useNavigate();
   const handlesubmit=async(e)=>{
     e.preventDefault();
@@ -31,7 +33,7 @@ function Login() {
         localStorage.setItem('user',JSON.stringify(result.user))
         navigate('/dashboard')
         toast.success("success")
-       
+       setData('')
       }
       else
       {
