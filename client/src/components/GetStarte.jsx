@@ -7,9 +7,9 @@ export default function GetStarte() {
   return (
     <div className={Get.acontainer} >
       <div  className={Get.items} style={{textAlign:'start'}}>
-        <img src={frontgif} alt="" srcset=""  height='500px'/>
+        <img src={frontgif} alt="" srcset="" className={Get.image} />
       </div>
-      <div  className={Get.items}>
+      <div  className={`${Get.items} ${Get.niche}`}>
         <h1>Wel Come </h1><h2>in our Chat Bot</h2>
         {!user?<Link to='/login' className="btn btn-primary" style={{textAlign:'center',backgroundColor:'black',border:'none'}}>Login</Link>:<Link to='/dashboard' className="btn btn-primary" style={{textAlign:'center',backgroundColor:'black',border:'none'}}>Go To Dashboard</Link>}
         </div>

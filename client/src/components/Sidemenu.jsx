@@ -9,7 +9,7 @@ function Sidemenu(props) {
   const user = JSON.parse(localStorage.getItem('user'));
   const token = JSON.parse(localStorage.getItem('token'));
   const [info, setInfo] = useState([]);
-  const { data, setData } = useContext(userPrompt);
+  const { data, setData,fet,setFet } = useContext(userPrompt);
   const [click,setClick]=useState(false)
 
   const fetchPrompt = async () => {
@@ -27,6 +27,7 @@ function Sidemenu(props) {
     if (result.success) {
       setData(result.find);
       setInfo(result.find);
+      setFet(result.find)
     } else {
       console.log("not happen");
     }

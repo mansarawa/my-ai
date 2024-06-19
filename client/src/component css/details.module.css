@@ -1,137 +1,136 @@
 .fullcontainer{
-    display: flex;
-    width: 100%;
-    background-color: white;
-    min-height: 92vh;
-    /* //color: cyan;  */
+  display: flex;
+  width: 100%;
+  background-color: white;
+  min-height: 92vh;
+  /* //color: cyan;  */
 }
 
 .sidemenu{
-    width: 20%;
-    margin-left: 2vw;
+  min-width: 20%;
+  max-width: 20%;
+  padding: 2vw;
 }
 .details{
-    /* margin-right: 10vw; */
-    width: 70vw;
-    display: flex;
-    padding-top: 20%;
-    flex-direction: column;
+  /* margin-right: 10vw; */
+  width: 80%;
+  display: flex;
+
+  flex-direction: column;
 }
 .ques{
-  display: flex;
-  margin-top: 20%;
+display: flex;
+/* margin-top: 5%; */
 }
 .question{
-    /* background-color: black; */
-    border-radius: 10px;
-    width: 20vw;
-    margin-top: 10%;
-    border: 1px solid black;
-    background-color: white;
-    color: black;
-    margin-left: 50vw;
-   
-    margin-bottom: 2%;
-    padding: 2%;
+  /* background-color: black; */
+  border-radius: 10px;
+  width: 20vw;
+  margin-top: 5%;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  margin-left: 50vw;
+ 
+  margin-bottom: 2%;
+  padding: 2%;
 }
 
 .answer {
-    width: 70%;
-    margin-bottom: 2%;
-    background-color: white;
-    color: black;
-    padding: 10px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    padding: 2%;
-    border: 1px solid black;
-    border-radius: 5px;
-   
-  }
-  /*side */
-  .container{
-    display: flex;
+  min-width: 70%;
+  max-width: 70%;
+  margin-bottom: 2%;
+  margin-left: 5px;
+  color: black;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 5px;
+ 
+}
+/*side */
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+.menu{
+ width: 100%;
+  margin: 2%;
+  height: 100%;
+}
+.btn{
+  border: none;
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+.hamburger{
+  display: none;
+  /* width: 100%; */
+}
+
+.hdiv{
+  margin-top:15%;
+  margin-left:25%;
+  width:60%;
+}
+@media screen and (max-width:1024px) {
+
+}
+@media screen and (max-width:450px) {
+  .fullcontainer{
+    width: 100%;
     flex-direction: column;
-    width: 100%;
-  
   }
-  .menu{
-   width: 100%;
-    margin: 2%;
-    height: 100%;
-  }
-  .btn{
-    border: none;
-    width: 100%;
-    background-color: white;
-    color: black;
+  .sidemenu{
+   height: 100px;
   }
   .hamburger{
-    display: none;
-    /* width: 100%; */
-  }
-  .fullside{
-    display: flex;
-    height: 100vh;
-    left:0px;
-    top: 0px;
-    position: fixed;
-    color: black;
-   overflow-y: scroll;
-    flex-direction: column;
-    width: 20vw;
-  }
-  .hdiv{
-    margin-top:15%;
-    margin-left:25%;
-    width:60%;
-  }
-  @media screen and (max-width:1024px) {
-
-  }
-  @media screen and (max-width:450px) {
-    .hamburger{
-        display: block;
-        width: 100%;
-        margin-top: 30%;
-    }
-    /* .hdiv{
+      display: block;
       width: 100%;
-    } */
-    .details{
+      margin-top: 30%;
+  }
+ 
+  /* .hdiv{
+    width: 100%;
+  } */
+  .details{
+   
+    display: none;
+  }
+  .full{
+    border: none;
+  }
+  .container{
+          display: none;
+  }
+ .dclick{
+  padding-top: 0%;  
+}
+  .click{
+      width: 100vw;
      
-      display: none;
+      min-height: 100vh;
     }
-    .full{
+   
+    .question{
+      /* margin-top:5%; */
+      width: 100%;
+      text-align: end;
+      /* align-items: flex-end; */
+      /* margin-left: 30%;
+      text-align: end; */
+      /* border: none; */
+    }
+    .answer{
+      margin-top: 5%;
       border: none;
+      padding: 0px;
+      min-width: 90%;
+      padding-left: 15px;
+      
     }
-    .container{
-            display: none;
-    }
-   .dclick{
-    padding-top: 10%;  
-  }
-    .click{
-        width: 100vw;
-       
-        min-height: 100vh;
-      }
-     
-      .question{
-        margin-top:5%;
-        width: 100%;
-       
-        text-align: end;
-        /* align-items: flex-end; */
-        /* margin-left: 30%;
-        text-align: end; */
-        border: none;
-      }
-      .answer{
-        margin-right: 10%;
-        border: none;
-        width: 90%;
-        
-      }
-  }
-  
+}
